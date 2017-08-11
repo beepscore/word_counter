@@ -15,6 +15,15 @@ class TestCounter(unittest.TestCase):
 
         self.assertEqual(actual, [])
 
+    def test_get_word_counts_one(self):
+
+        text = "foo"
+
+        # call method under test
+        actual = counter.get_word_counts(text)
+
+        self.assertEqual(actual, [('foo', 1)])
+
     def test_get_word_counts(self):
 
         text = "foo bar baz foo bar bar baz bar"
