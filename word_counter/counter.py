@@ -9,8 +9,6 @@ def get_word_counts(text):
     """
     Search words in a given text.
     """
-    # https://stackoverflow.com/questions/5028717/matching-unicode-characters-in-python-regular-expressions
-    # words = map(lambda x: x.lower(), re.findall(r'\w+', text, re.UNICODE))
     # https://docs.python.org/3/howto/regex.html
     words = map(lambda x: x.lower(), re.findall(r'\w+', text, re.ASCII))
 
