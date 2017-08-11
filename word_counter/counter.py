@@ -39,3 +39,19 @@ def word_counts_from_file(filename):
     textfile.close()
 
     return word_counts(text)
+
+
+def write_word_counts(input_filename, output_filename):
+    """
+    reads input_filename as a single string
+    writes to output_filename
+    """
+
+    counts = word_counts_from_file(input_filename)
+    counts_string = str(counts)
+
+    # write results to file
+    with open(output_filename, 'w') as outfile:
+        outfile.write(counts_string)
+        # avoid warning "no eol (end of line)"
+        outfile.write('\n')
