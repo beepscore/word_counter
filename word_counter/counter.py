@@ -48,10 +48,11 @@ def write_word_counts(input_filename, output_filename):
     """
 
     counts = word_counts_from_file(input_filename)
-    counts_string = str(counts)
 
     # write results to file
     with open(output_filename, 'w') as outfile:
-        outfile.write(counts_string)
-        # avoid warning "no eol (end of line)"
-        outfile.write('\n')
+        for item in counts:
+            # use print instead of write
+            # https://stackoverflow.com/questions/6159900/correct-way-to-write-line-to-file-in-python#6159912
+            print(str(item), file=outfile)
+

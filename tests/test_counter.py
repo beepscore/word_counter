@@ -57,6 +57,23 @@ class TestCounter(unittest.TestCase):
         actual = outfile.read()
         outfile.close()
 
-        expected = "[('bar', 4), ('mary', 3), ('foo', 2), ('baz', 2), ('why', 2), ('words0', 1), ('txt', 1), ('blah', 1), ('yay', 1), ('had', 1), ('little', 1), ('lamb', 1), ('oh', 1), ('nonsense', 1), ('follows', 1), ('fog', 1), ('bottom', 1)]\n"
+        expected = """('bar', 4)
+('mary', 3)
+('foo', 2)
+('baz', 2)
+('why', 2)
+('words0', 1)
+('txt', 1)
+('blah', 1)
+('yay', 1)
+('had', 1)
+('little', 1)
+('lamb', 1)
+('oh', 1)
+('nonsense', 1)
+('follows', 1)
+('fog', 1)
+('bottom', 1)
+"""
 
         self.assertEqual(actual, expected)
