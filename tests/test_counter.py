@@ -33,3 +33,11 @@ class TestCounter(unittest.TestCase):
 
         self.assertEqual(actual, [('bar', 4), ('foo', 2), ('baz', 2)])
 
+    def test_word_counts_from_file(self):
+
+        filename = "data/input/words0.txt"
+
+        # call method under test
+        actual = counter.word_counts_from_file(filename)
+
+        self.assertEqual(actual, [('bar', 4), ('foo', 2), ('baz', 2)])
