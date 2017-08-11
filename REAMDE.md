@@ -1,5 +1,5 @@
 # Purpose
-Count word occurrences in a file.
+Read an input file, count word occurrences, sort most common first and write to output file.
 
 Alternatively could use nltk tokenizer.
 
@@ -7,16 +7,18 @@ Alternatively could use nltk tokenizer.
 
 ## PyTagCloud
 https://github.com/atizo/PyTagCloud counter.py
+BSD license
 
 ## nltk tokenizer
 https://stackoverflow.com/questions/10677020/real-word-count-in-nltk
 
 # Results
+See main.py and unit tests
 
 ## python command line
 
 ### main
-This command runs main
+To run main
 
     python3 main.py
 
