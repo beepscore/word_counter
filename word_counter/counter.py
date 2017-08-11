@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# adapted from https://github.com/atizo/PyTagCloud counter.py
 
 import re
 from operator import itemgetter
@@ -8,6 +7,8 @@ from operator import itemgetter
 def word_counts(text):
     """
     Search words in a given text.
+    Adapted from Python 2 PyTagCloud counter.py get_word_counts
+    https://github.com/atizo/PyTagCloud
     """
     # https://docs.python.org/3/howto/regex.html
     words = map(lambda x: x.lower(), re.findall(r'\w+', text, re.ASCII))
