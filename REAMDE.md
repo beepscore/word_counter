@@ -13,7 +13,14 @@ https://stackoverflow.com/questions/10677020/real-word-count-in-nltk
 
 # Results
 
-### python command
+## python command line
+
+### main
+This command runs main
+
+    python3 main.py
+
+### tests
 This command lists and tests all modules
 
     python3 -m unittest discover -s tests/
