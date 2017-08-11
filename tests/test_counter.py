@@ -35,7 +35,7 @@ class TestCounter(unittest.TestCase):
 
     def test_word_counts_from_file(self):
 
-        filename = "data/input/words0.txt"
+        filename = "data/input/words0_test.txt"
 
         # call method under test
         actual = counter.word_counts_from_file(filename)
