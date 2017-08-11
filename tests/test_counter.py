@@ -2,7 +2,6 @@
 
 import unittest
 from word_counter import counter
-# from counter import get_word_counts
 
 
 class TestCounter(unittest.TestCase):
