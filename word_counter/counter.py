@@ -5,7 +5,7 @@ import re
 from operator import itemgetter
 
 
-def get_word_counts(text):
+def word_counts(text):
     """
     Search words in a given text.
     """
@@ -38,4 +38,4 @@ def word_counts_from_file(filename):
     text = textfile.read()
     textfile.close()
 
-    return get_word_counts(text)
+    return word_counts(text)
